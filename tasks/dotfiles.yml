@@ -1,0 +1,22 @@
+---
+- name: Check if dotfiles directory already exists
+  stat: path={{ dotfiles_path }}
+  register: dotfiles_dir
+
+- name: Clone dotfiles if they don't exist
+  git: repo="{{ dotfiles_repo }}" dest="{{ dotfiles_path }}"
+  when: dotfiles_dir.stat.exists == false
+
+- name: Retrieve a list of the .symlink files
+  find: path="{{ dotfiles_path }}" pattern="*.symlink"
+  register: files_to_symlink
+  always_run: yes
+
+- name: Retrieve a list of the .symlink directories
+  find: path={{ dotfiles_path }} pattern="*.symlink" file_type=directory
+  register: dirs_to_symlink
+  always_run: yes
+
+- name: Symlink all the dotfiles
+  file: src={{ item.path }} dest=/Users/{{install_user}}/.{{ item.path|basename|replace(".symlink", "") }} state=link
+  with_items: "{{ files_to_symlink.files + dirs_to_symlink.files }}"

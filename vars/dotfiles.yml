@@ -1,0 +1,3 @@
+---
+dotfiles_path: "/Users/{{ install_user }}/.dotfiles"
+dotfiles_repo: https://github.com/imjoshholloway/dotfiles.git

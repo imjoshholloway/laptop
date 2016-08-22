@@ -1,0 +1,51 @@
+---
+homebrew_taps:
+  - caskroom/cask
+  - caskroom/fonts
+  - caskroom/versions
+  - getantibody/antibody
+  - homebrew/bundle
+  - homebrew/versions
+
+homebrew_installed_packages:
+  # cli-tools / helpers
+  - awscli
+  - cheat
+  - 'getantibody/antibody/antibody'
+  - git
+  - jq
+  - reattach-to-user-namespace
+  - tmux
+  - zsh
+    # Languages
+  - protobuf
+  - python
+  - python3
+    # Version managers
+  - dvm
+  - nvm
+  - rbenv
+    # Other
+  - packer
+  - terraform
+  - vim
+
+homebrew_package_options:
+  vim:
+    - with-lua
+    - with-python3
+
+homebrew_cask_apps:
+  # fonts
+  - font-droid-sans-mono-for-powerline
+  - font-source-code-pro
+  # apps
+  - 1password
+  - google-chrome
+  - slack
+  - sourcetree
+  - spectacle
+  - spotify
+  - vagrant
+  - virtualbox
+  - viscosity

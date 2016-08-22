@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  vars_files:
+    - vars/dotfiles.yml
+    - vars/homebrew.yml
+    - vars/osx.yml
+  roles:
+    - ansible-role-homebrew
+  tasks:
+    - include: tasks/dotfiles.yml
+    - include: tasks/osx.yml
