@@ -15,33 +15,41 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/imjoshholloway/laptop/mast
 
  - 1Password
  - Google Chrome
+ - Evernote
+ - Minikube
  - Slack
+ - Sourcetree
  - Spectacle
  - Spotify
- - Sourcetree
  - Vagrant
  - Virtualbox
- - Viscosity
 
 ## Installed Packages / Utilities:
 
- - awscli
- - cheat
- - git
- - jq
+ - ansible
  - antibody
- - reattach-to-user-namespace
- - tmux
- - zsh
- - protobuf
- - go
- - nvm
- - python3
+ - autoconf
+ - awscli
+ - cmake
  - dvm
- - rbenv
+ - git
+ - go
+ - jq
  - packer
+ - protobuf
+ - pyenv
+ - pyenv-virtualenv
+ - python
+ - python3
+ - rbenv
+ - readline
+ - reattach-to-user-namespace
  - terraform
+ - terragrunt
+ - tmux
+ - tree
  - vim
+ - zsh
 
 ## Credits
 

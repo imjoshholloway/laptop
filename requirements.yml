@@ -1,2 +1,2 @@
 ---
-- src: https://github.com/imjoshholloway/ansible-role-homebrew.git
+- src: geerlingguy.homebrew

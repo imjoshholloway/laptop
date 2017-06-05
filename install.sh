@@ -65,8 +65,10 @@ fi
 fancy_echo "Changing to laptop repo dir ..."
 cd $HOME/.laptop
 
+export ANSIBLE_CONFIG=$HOME/.laptop/ansible.cfg
+
 fancy_echo "Installing ansible roles ..."
-ansible-galaxy install -r requirements.yml
+ansible-galaxy install -r requirements.yml --force
 
 # Run this from the same directory as this README file.
 fancy_echo "Running ansible playbook for user ${install_user}..."

@@ -8,44 +8,44 @@ homebrew_taps:
   - homebrew/versions
 
 homebrew_installed_packages:
-  # cli-tools / helpers
+  - ansible
+  - antibody
+  - autoconf
   - awscli
-  - cheat
-  - 'getantibody/antibody/antibody'
+  - cmake
+  - dvm
   - git
+  - go
   - jq
-  - reattach-to-user-namespace
-  - tmux
-  - zsh
-    # Languages
+  - packer
   - protobuf
+  - pyenv
+  - pyenv-virtualenv
   - python
   - python3
-    # Version managers
-  - dvm
-  - nvm
   - rbenv
-    # Other
-  - packer
+  - readline
+  - reattach-to-user-namespace
   - terraform
-  - vim
-
-homebrew_package_options:
-  vim:
-    - with-lua
-    - with-python3
+  - terragrunt
+  - tmux
+  - tree
+  - { name: vim, install_options: "with-lua,with-python3" }
+  - zsh
 
 homebrew_cask_apps:
   # fonts
   - font-droid-sans-mono-for-powerline
   - font-source-code-pro
+
   # apps
   - 1password
   - google-chrome
+  - evernote
+  - minikube
   - slack
   - sourcetree
   - spectacle
   - spotify
   - vagrant
   - virtualbox
-  - viscosity

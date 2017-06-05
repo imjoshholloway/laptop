@@ -5,7 +5,7 @@
     - vars/homebrew.yml
     - vars/osx.yml
   roles:
-    - ansible-role-homebrew
+    - geerlingguy.homebrew
   tasks:
     - include: tasks/dotfiles.yml
     - include: tasks/osx.yml
