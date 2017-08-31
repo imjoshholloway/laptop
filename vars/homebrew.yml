@@ -40,11 +40,10 @@ homebrew_cask_apps:
 
   # apps
   - 1password
+  - docker
   - google-chrome
-  - evernote
-  - minikube
+  - fanny
   - slack
-  - sourcetree
   - spectacle
   - spotify
   - vagrant

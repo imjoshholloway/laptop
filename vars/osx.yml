@@ -7,72 +7,117 @@ osx:
   prefs:
     # Global Preferences
     - key: AppleScrollerPagingBehavior
+      domain: NSGlobalDomain
       value: 1
-      domain: NSGlobalDomain
+      type: string
+
     - key: InitialKeyRepeat
-      value: -int 15
       domain: NSGlobalDomain
+      value: 15
+      type: int
+
     - key: KeyRepeat
-      value: -int 2
       domain: NSGlobalDomain
+      value: 2
+      type: int
+
     - key: com.apple.springing.enabled
-      value: -bool true
       domain: NSGlobalDomain
+      value: true
+      type: bool
+
     - key: AppleKeyboardUIMode
-      value: -int 3
       domain: NSGlobalDomain
+      value: 3
+      type: int
 
     # Trackpad
     - key: Clicking
-      value: -bool true
       domain: com.apple.AppleMultitouchTrackpad
+      value: true
+      type: bool
+
     - key: TrackpadThreeFingerHorizSwipeGesture
-      value: -int 2
       domain: com.apple.AppleMultitouchTrackpad
+      value: 2
+      type: int
+
     - key: Clicking
-      value: -bool true
       domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+      value: true
+      type: bool
+
     - key: com.apple.mouse.tapBehavior
-      value: -int 1
       domain: NSGlobalDomain
+      value: 1
+      type: int
+
     - key: com.apple.swipescrolldirection
-      value: -bool false
       domain: com.apple.swipescrolldirection
+      value: false
+      type: bool
 
     # Finder
     - key: FXDefaultSearchScope
-      value: -string SCcf
       domain: com.apple.Finder
+      value: -SCcf
+      type: string
 
     # Screensaver
     - key: askForPasswordDelay
-      value: -int 0
       domain: com.apple.Screensaver
+      value: 0
+      type: int
+
     - key: askForPassword
-      value: -int 1
       domain: com.apple.Screensaver
+      value: 1
+      type: int
 
     # Dock
     - key: autohide
-      value: -bool true
       domain: com.apple.Dock
+      value: true
+      type: bool
+
     - key: mineffect
-      value: -string scale
+      value: scale
       domain: com.apple.Dock
+      type: string
+
     - key: minimize-to-application
-      value: -bool true
+      value: true
       domain: com.apple.Dock
+      type: bool
+
     - key: orientation
-      value: -string bottom
+      value: bottom
       domain: com.apple.Dock
+      type: string
+
     - key: tilesize
-      value: -int 36
+      value: 36
       domain: com.apple.Dock
+      type: float
+
     - key: showAppExposeGestureEnabled
-      value: -bool true
+      value: true
       domain: com.apple.Dock
+      type: bool
+
+    # Set the bottom left corner to start the screensaver
+    - key: wvous-bl-corner
+      value: 5
+      domain: com.apple.Dock
+      type: int
+
+    - key: wvous-bl-modifier
+      value: 0
+      domain: com.apple.Dock
+      type: int
 
     # Help
     - key: DevMode
-      value: -bool true
+      value: true
       domain: com.apple.HelpViewer
+      type: bool
